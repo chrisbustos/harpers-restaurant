@@ -4,99 +4,101 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Link to an external CSS file. -->
+        <!-- The below gets rid of browser presets -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+        
         <link rel="stylesheet" href="styles.css">
 
         <title>Harper's Restaurant</title>
     </head>
 
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#Menu">Menu</a></li>
-                    <li><a href="#Hours">Hours</a></li>
-                    <li><a href="#Location">Location</a></li>
-
-                </ul>
-            </nav>
-        </header>
-
-        <div class="Name">
-            <h1>Harper's Restaurant> </h1>
+        
+        <div class="Landing">
+            <div class="Sign">
+                <h1>Harper's Restaurant</h1>
+                <p>Where good eating meets good people!</p>
+            </div>
         </div>
-
-        <div class="Tagline">
-            <h1> A quick taste of fusion. </h1>
-        </div>
-
-        <div class="Logo">
-            <img src="images/table-food.png" alt="Harper's restaurant logo" />
-        </div>
-
-        <div class="Hours">
-            <h3>Hours</h3>
-            <p>7AM to 10PM everyday</p>>
-        </div>
-        <div class="Menu" id="Menu">
-            <ul>
-                <li>Enchiladas 19.99</li>
-                <li>Tacos 10.99</li>
-                <li>Rice 4.00</li>
-                <li>Beans 4.00</li>
-            </ul>
-        </div>
-
-
-        <div class="Address" id="Location">
-            <address>
-                1234 Ocean Avenue
-                You know where it is
-                Los Angeles, California
-            </address>
-        </div>
-
 
         <div class="Testimonials">
-            <ul>
-                <li class="testimonial">
-                    <img src="images/woman.png">
-                    <p class="name">Devyn Ruddy</p>
-                    <p>The best enchiladas I've ever had.</p>
-                </li>
+            <div class="Testimonial">
+                <img src="images/woman.png">
+                <p class="name">Devyn Ruddy</p>
+                <p>The best enchiladas I've ever had.</p>                
+            </div>
+            
+            <div class="Testimonial">
+                <img src="images/woman.png">
+                <p class="name">Jacky Filborn</p>
+                <p>Can't beat the rice here.</p>                
+            </div>
 
-                <li class="testimonial">
-                    <img src="images/woman.png">
-                    <p class="name">Jacky Filborn</p>
-                    <p>Can't beat the rice here.</p>
+            <div class="Testimonial">
+                <img src="images/woman.png">
+                <p class="name">Tonia Jackson</p>
+                <p>I buy 5lbs of beans from here every week!</p>               
+            </div>
+        </div>        
+        
+        <div class="Menu">
+            <h2>Menu</h2>
+            <ol>
+                <li>
+                    <h3>Enchiladas</h3>
+                    <p>$19.99</p>
                 </li>
-
-                <li class="testimonial">
-                    <img src="images/woman.png">
-                    <p class="name">Tonia Jackson</p>
-                    <p>I buy 5lbs of beans from here every week!</p>
+                <li>
+                    <h3>Tacos</h3>
+                    <p>$10.99</p>
                 </li>
-            </ul>
+                <li>
+                    <h3>Rice</h3>
+                    <p>$4.00</p>
+                </li>
+            </ol>
         </div>
 
+        <div class="Information">
+            <div class="Location">
+                <h3>Location</h3>
+                <address>
+                    1234 Ocean Avenue
+                    You know where it is.
+                    Los Angeles, California
+                </address>
+            </div>
+            <div class="About">
+                <h3>About</h3>
+                <p>Inspired by my dog. She's a Silken Windhound. She's dope. This is dope food.</p>
+            </div>
 
-
-        <div class="Blog">
-            <a href="https://www.google.com">Blog</a>
         </div>
 
-        <footer>
-            &copy; Harper's Restaurant
+        <div class="Contact">
+            <form action="/my-handling-form-page" method="post">
+
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" placeholder="Type Your Name">
+                </div>
+    
+                <div>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_mail" placeholder="Type Your Email">
+                </div>
+    
+                <div>
+                    <label for="msg">What's up?</label>
+                    <input type="text" id="msg" name="user_message" placeholder="Type Your Message"></textarea>
+              </div>
+            </form>
+        </div>
+
+        <footer class="Footer">
+            <p><strong>unite</strong> for good food.</p>
         </footer>
 
 
-
-        <script>
-            console.log("This will print in the JavaScript console, which is part of the standard suite of developer tools. JavaScript.");
-
-            console.log("Note that we put the script tags right before the closing body tag.")
-
-            console.log("This should say the tagline" + document.getElementsByClassName("Tagline"));
-        </script>
     </body>
 </html>
